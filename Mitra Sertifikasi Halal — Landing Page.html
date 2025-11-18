@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)https://halal.jawaralegal.biz.id/halal-bandung.html -->
+<html lang="id"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mitra Sertifikasi Halal — Landing Page</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="./Mitra Sertifikasi Halal — Landing Page_files/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="./Mitra Sertifikasi Halal — Landing Page_files/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    :root{
+      --primary: #610675;
+      --bg: #f4f2f5;
+      --muted: #6b6b6b;
+      --accent: #7b3da7;
+      --card-shadow: 0 10px 25px rgba(97,6,117,0.08);
+    }
+
+    html,body{
+      height:100%;
+      background: var(--bg);
+      color: #222;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      background: rgba(255,255,255,0.85);
+      backdrop-filter: blur(6px);
+      border-bottom: 1px solid rgba(0,0,0,0.04);
+    }
+    .nav-link { color: rgba(0,0,0,0.7) !important; }
+    .btn-primary {
+      background: linear-gradient(90deg,var(--primary), var(--accent));
+      border: none;
+      box-shadow: 0 6px 18px rgba(97,6,117,0.18);
+    }
+
+    /* HERO */
+    .hero {
+      padding: 90px 0;
+      background: linear-gradient(180deg, rgba(97,6,117,0.04) 0%, rgba(97,6,117,0.02) 100%);
+    }
+    .hero h1{
+      font-size: clamp(1.6rem, 2.8vw, 2.8rem);
+      line-height:1.05;
+      color: var(--primary);
+      font-weight:700;
+    }
+    .hero p.lead{
+      color: #333;
+      font-size:1.05rem;
+      margin-top:12px;
+    }
+    .hero-illustration{
+      background: linear-gradient(135deg, rgba(97,6,117,0.08), rgba(123,61,167,0.04));
+      border-radius: 18px;
+      padding: 28px;
+      box-shadow: var(--card-shadow);
+      min-height: 320px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+
+    /* CARDS & SECTIONS */
+    .feature-card{
+      border-radius: 12px;
+      background:white;
+      padding:22px;
+      box-shadow: var(--card-shadow);
+      transition: transform .28s ease, box-shadow .28s ease;
+      height:100%;
+    }
+    .feature-card:hover{
+      transform: translateY(-6px);
+      box-shadow: 0 18px 40px rgba(97,6,117,0.08);
+    }
+
+    .danger-accent{
+      background: linear-gradient(90deg, rgba(255,205,86,0.08), rgba(255,205,86,0.02));
+      border-left: 4px solid #f9c74f;
+    }
+
+    .kpi {
+      background: white;
+      border-radius:12px;
+      padding:18px;
+      box-shadow: var(--card-shadow);
+    }
+
+    /* Pricing-like Layanan */
+    .pkg {
+      border-radius: 14px;
+      background: white;
+      padding: 22px;
+      box-shadow: var(--card-shadow);
+      transition: transform .22s ease;
+      height:100%;
+    }
+    .pkg.recommended{
+      border:2px solid rgba(97,6,117,0.08);
+      transform: translateY(-6px);
+    }
+
+    /* BONUS */
+    .bonus-card {
+      background: linear-gradient(180deg, #fff 0%, #fbfbff 100%);
+      border-radius: 12px;
+      padding: 16px;
+      box-shadow: var(--card-shadow);
+    }
+
+    /* FOOTER */
+    footer{
+      background:#0f0e12;
+      color: #d7cfe4;
+      padding:40px 0;
+    }
+    footer a { color: #e9dff7; text-decoration:none; }
+    footer small { color: #b9aee1; }
+
+    /* WhatsApp Bubble */
+    .wa-bubble{
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 1100;
+      border-radius: 14px;
+      background: linear-gradient(90deg,var(--primary),var(--accent));
+      color: white;
+      padding: 12px 14px;
+      display:flex;
+      gap:10px;
+      align-items:center;
+      box-shadow: 0 12px 30px rgba(97,6,117,0.18);
+    }
+    .wa-bubble .bi { font-size:1.25rem; }
+
+    /* small helpers */
+    .muted { color: var(--muted); }
+    .section-pad { padding: 64px 0; }
+    .subtle { color: rgba(0,0,0,0.6); }
+
+    /* simple fade-in on scroll (tiny) */
+    .reveal {
+      opacity:0;
+      transform: translateY(10px);
+      transition: opacity .6s ease, transform .6s ease;
+    }
+    .reveal.visible { opacity:1; transform:none; }
+
+    @media (max-width: 820px){
+      .hero { padding: 56px 0; }
+      .wa-bubble { right: 12px; bottom: 12px; padding:10px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+ <nav class="navbar navbar-expand-lg sticky-top shadow-sm">
+  <div class="container">
+
+    <!-- BRAND -->
+    <a class="navbar-brand d-flex align-items-center gap-2" href="https://halal.jawaralegal.biz.id/halal-bandung.html#home">
+      <img src="./Mitra Sertifikasi Halal — Landing Page_files/Legal Hub 2.jpg" alt="MitraHalal Logo" style="width:44px;height:44px;border-radius:10px;object-fit:cover;">
+
+      <div>
+        <div style="font-weight:700;color:var(--primary);">MitraHalal</div>
+        <small class="text-muted" style="font-size:12px;">Sertifikasi BPJPH · Pendamping UMKM</small>
+      </div>
+    </a>
+
+    <!-- TOGGLER -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- MENU -->
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-2">
+        <li class="nav-item"><a class="nav-link" href="https://halal.jawaralegal.biz.id/halal-bandung.html#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://halal.jawaralegal.biz.id/halal-bandung.html#jenis">Tentang Halal</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://halal.jawaralegal.biz.id/halal-bandung.html#dampak">Dampak</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://halal.jawaralegal.biz.id/halal-bandung.html#kenapa">Kenapa Kami</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://halal.jawaralegal.biz.id/halal-bandung.html#layanan">Layanan</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://halal.jawaralegal.biz.id/halal-bandung.html#bonus">Bonus</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://halal.jawaralegal.biz.id/halal-bandung.html#kontak">Kontak</a></li>
+
+        <li class="nav-item ms-lg-3">
+          <a class="btn btn-primary" href="https://halal.jawaralegal.biz.id/halal-bandung.html#kontak">Konsultasi Gratis</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+  <!-- HERO -->
+  <header id="home" class="hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- left copy -->
+        <div class="col-lg-6 mb-4 reveal visible" data-reveal="">
+          <h1>Legalitas Halal Bukan Sekadar Tanda — Ini Penentu Arah Usaha Anda</h1>
+          <p class="lead">Produk tanpa sertifikat tak hanya kehilangan pasar — reputasi dan peluang ekspor bisa hilang. Kita bantu Anda dari cek bahan, dokumen, sampai sertifikat BPJPH–MUI terbit.</p>
+
+          <div class="d-flex gap-2 mt-4">
+            <a class="btn btn-primary btn-lg" href="https://halal.jawaralegal.biz.id/halal-bandung.html#kontak">Konsultasi Gratis</a>
+            <a class="btn btn-outline-secondary btn-lg" href="https://halal.jawaralegal.biz.id/halal-bandung.html#jenis">Pelajari Regulasi</a>
+          </div>
+
+          <div class="mt-4 subtle">Trusted by UMKM &amp; brand lokal. Gratis untuk skema tertentu.</div>
+        </div>
+
+        <!-- right illustration -->
+        <div class="col-lg-6 reveal visible" data-reveal="">
+          <div class="hero-illustration">
+            <!-- simple illustration with cards -->
+            <div style="width:100%;max-width:520px;">
+              <div class="row g-3">
+                <div class="col-6">
+                  <div class="kpi text-start">
+                    <div class="fw-bold" style="color:var(--primary);">#1</div>
+                    <div class="muted small">Pendampingan penuh</div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="kpi text-start">
+                    <div class="fw-bold" style="color:var(--primary);">#95%</div>
+                    <div class="muted small">Keberhasilan proses</div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="kpi text-start mt-2">
+                    <div class="fw-semibold" style="font-size:1.05rem;color:var(--primary);">Sertifikasi BPJPH — Proses yang jelas</div>
+                    <div class="muted small mt-1">Cek bahan • Audit produksi • Pengurusan dokumen • Pendampingan auditor</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /right -->
+      </div>
+    </div>
+  </header>
+
+  <!-- SECTION: Usaha yang wajib -->
+  <section id="jenis" class="section-pad">
+    <div class="container">
+      <div class="row align-items-center mb-4">
+        <div class="col-lg-6 reveal" data-reveal="">
+          <h3>Usaha yang Wajib Memiliki Sertifikat Halal</h3>
+          <p class="subtle">Berdasarkan BPJPH dan tahapan implementasi: beberapa kategori produk wajib bersertifikat halal. Cek apakah usaha Anda termasuk.</p>
+          <a class="btn btn-outline-primary mt-3" href="https://halal.jawaralegal.biz.id/halal-bandung.html#layanan">Cek Skema Pendaftaran</a>
+        </div>
+        <div class="col-lg-6 reveal" data-reveal="">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <div class="feature-card">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="bg-light rounded-3 p-2"><i class="bi bi-cup-straw fs-3" style="color:var(--primary)"></i></div>
+                  <div>
+                    <div class="fw-bold">Makanan &amp; Minuman</div>
+                    <div class="subtle small">Produk olahan &amp; bahan baku pangan</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="feature-card">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="bg-light rounded-3 p-2"><i class="bi bi-droplet-half fs-3" style="color:var(--primary)"></i></div>
+                  <div>
+                    <div class="fw-bold">Kosmetik &amp; Obat Tradisional</div>
+                    <div class="subtle small">Produk bersentuhan langsung dengan tubuh</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="feature-card">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="bg-light rounded-3 p-2"><i class="bi bi-house-heart fs-3" style="color:var(--primary)"></i></div>
+                  <div>
+                    <div class="fw-bold">Hasil Sembelihan &amp; Jasa Penyembelihan</div>
+                    <div class="subtle small">Termasuk proses pemotongan &amp; sertifikasi layanan</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="feature-card">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="bg-light rounded-3 p-2"><i class="bi bi-box-seam fs-3" style="color:var(--primary)"></i></div>
+                  <div>
+                    <div class="fw-bold">Pengemasan, Penyimpanan, Distribusi</div>
+                    <div class="subtle small">Jasa yang menyentuh rantai pasok</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: Dampak jika tidak -->
+  <section id="dampak" class="section-pad bg-white">
+    <div class="container">
+      <div class="text-center mb-4 reveal" data-reveal="">
+        <h3 class="mb-2">Dampak Jika Usaha Tidak Memiliki Sertifikat Halal</h3>
+        <p class="subtle">Risiko nyata yang bisa menghantam omzet dan reputasi—bukan sekadar teori.</p>
+      </div>
+
+      <div class="row g-3">
+        <div class="col-md-6 reveal" data-reveal="">
+          <div class="feature-card danger-accent">
+            <h5 class="fw-bold">Produk Di tarik dari Peredaran</h5>
+            <p class="muted small">Sanksi administratif bisa menyebabkan produk Anda ditarik sementara atau permanen.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 reveal" data-reveal="">
+          <div class="feature-card">
+            <h5 class="fw-bold">Marketplace / Retail Menolak Listing</h5>
+            <p class="muted small">Platform modern mensyaratkan label halal untuk kategori tertentu.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 reveal" data-reveal="">
+          <div class="feature-card">
+            <h5 class="fw-bold">Kehilangan Kepercayaan Konsumen</h5>
+            <p class="muted small">Sekali kepercayaan hilang, membangun kembali butuh waktu dan biaya.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 reveal" data-reveal="">
+          <div class="feature-card">
+            <h5 class="fw-bold">Peluang Ekspor Tertutup</h5>
+            <p class="muted small">Banyak pasar internasional menuntut sertifikat halal yang terverifikasi.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="kenapa" class="section-pad">
+  <div class="container">
+    <div class="row align-items-center g-4">
+      
+      <!-- image -->
+      <div class="col-lg-6 reveal" data-reveal="">
+        <div class="p-2 rounded-4 shadow-sm" style="background:linear-gradient(135deg,rgba(97,6,117,0.08),rgba(123,61,167,0.05));">
+          <img src="./Mitra Sertifikasi Halal — Landing Page_files/photo-1695712641569-05eee7b37b6d" class="img-fluid rounded-4 shadow-lg" alt="pendamping-halal">
+        </div>
+      </div>
+
+      <!-- copy -->
+      <div class="col-lg-6 reveal" data-reveal="">
+        <h3 class="fw-bold" style="color:var(--primary)">Kenapa Harus Punya Sertifikat Halal?</h3>
+        <p class="subtle mb-3">Lebih dari sekadar label — ini fondasi kepercayaan &amp; daya saing usaha Anda.</p>
+
+        <div class="mt-3">
+          <div class="d-flex mb-3">
+            <i class="bi bi-shield-check fs-3 me-3" style="color:var(--primary)"></i>
+            <div>
+              <strong>Perlindungan Konsumen</strong><br>
+              <span class="subtle small">Menjamin produk sesuai standar syariat &amp; keamanan.</span>
+            </div>
+          </div>
+
+          <div class="d-flex mb-3">
+            <i class="bi bi-file-earmark-lock fs-3 me-3" style="color:var(--primary)"></i>
+            <div>
+              <strong>Kepastian Hukum</strong><br>
+              <span class="subtle small">Patuh terhadap UU JPH &amp; regulasi BPJPH.</span>
+            </div>
+          </div>
+
+          <div class="d-flex mb-3">
+            <i class="bi bi-graph-up-arrow fs-3 me-3" style="color:var(--primary)"></i>
+            <div>
+              <strong>Daya Saing Naik</strong><br>
+              <span class="subtle small">Mudah masuk retail, marketplace, bahkan ekspor.</span>
+            </div>
+          </div>
+
+          <div class="d-flex">
+            <i class="bi bi-gear-wide-connected fs-3 me-3" style="color:var(--primary)"></i>
+            <div>
+              <strong>Standar Produksi Meningkat</strong><br>
+              <span class="subtle small">Proses makin rapi, bersih, dan konsisten.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- SECTION: Kenapa memilih kami -->
+  <section id="kenapa-kami" class="section-pad bg-white">
+    <div class="container">
+      <div class="text-center mb-4 reveal" data-reveal="">
+        <h3>Kenapa Memilih Kami Sebagai Mitra Halal?</h3>
+        <p class="subtle">Kita bukan sekadar 'jasa' — kita partner yang menavigasi proses sampai lulus.</p>
+      </div>
+
+      <div class="row g-3">
+        <div class="col-md-4 reveal" data-reveal="">
+          <div class="feature-card text-center p-4">
+            <i class="bi bi-person-check fs-1" style="color:var(--primary)"></i>
+            <h5 class="mt-3">Pendampingan Penuh</h5>
+            <p class="muted small">Tim ahli dampingi dari cek bahan hingga audit.</p>
+          </div>
+        </div>
+        <div class="col-md-4 reveal" data-reveal="">
+          <div class="feature-card text-center p-4">
+            <i class="bi bi-file-earmark-text fs-1" style="color:var(--primary)"></i>
+            <h5 class="mt-3">Dokumen Rapi Tanpa Ribet</h5>
+            <p class="muted small">Formulir, SOP, dan upload kami urus.</p>
+          </div>
+        </div>
+        <div class="col-md-4 reveal" data-reveal="">
+          <div class="feature-card text-center p-4">
+            <i class="bi bi-clock-history fs-1" style="color:var(--primary)"></i>
+            <h5 class="mt-3">Proses Cepat &amp; Transparan</h5>
+            <p class="muted small">Timeline jelas; update progress real-time.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 reveal" data-reveal="">
+          <div class="feature-card text-center p-4">
+            <i class="bi bi-people fs-1" style="color:var(--primary)"></i>
+            <h5 class="mt-3">Ramah UMKM</h5>
+            <p class="muted small">Skema gratis &amp; self-declare kami bantu jalankan.</p>
+          </div>
+        </div>
+        <div class="col-md-4 reveal" data-reveal="">
+          <div class="feature-card text-center p-4">
+            <i class="bi bi-globe fs-1" style="color:var(--primary)"></i>
+            <h5 class="mt-3">Akses Pasar Global</h5>
+            <p class="muted small">Sertifikat mempermudah penetrasi ekspor.</p>
+          </div>
+        </div>
+        <div class="col-md-4 reveal" data-reveal="">
+          <div class="feature-card text-center p-4">
+            <i class="bi bi-award fs-1" style="color:var(--primary)"></i>
+            <h5 class="mt-3">Support After-Service</h5>
+            <p class="muted small">Evaluasi dan pembaharuan pasca-sertifikat.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: Layanan -->
+  <section id="layanan" class="section-pad">
+    <div class="container">
+      <div class="text-center mb-4 reveal" data-reveal="">
+        <h3>Layanan Sertifikasi Halal</h3>
+        <p class="subtle">Pilih jalur paling cocok untuk usaha Anda — Gratis Pemerintah, Self Declare UMKM, atau Reguler.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4 reveal" data-reveal="">
+          <div class="pkg text-center p-4">
+            <div class="fw-bold" style="color:var(--primary)">Gratis Pemerintah (SEHATI)</div>
+            <div class="muted small mb-3">Skema untuk UMKM low-risk sesuai kriteria</div>
+            <ul class="list-unstyled text-start small">
+              <li>• Pendampingan dokumen</li>
+              <li>• Validasi bahan tunggal</li>
+              <li>• Upload &amp; monitoring</li>
+            </ul>
+            <div class="mt-3">
+              <a href="https://halal.jawaralegal.biz.id/halal-bandung.html#kontak" class="btn btn-outline-primary">Lihat Detail</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 reveal" data-reveal="">
+          <div class="pkg recommended text-center p-4">
+            <div class="fw-bold" style="color:var(--primary)">Self Declare Mandiri (UMKM)</div>
+            <div class="muted small mb-3">Rekomendasi untuk UMKM yang ingin cepat &amp; mudah</div>
+            <ul class="list-unstyled text-start small">
+              <li>• Bimbingan pengisian self-declare</li>
+              <li>• Verifikasi pra-audit</li>
+              <li>• Pendampingan auditor</li>
+            </ul>
+            <div class="mt-3">
+              <a href="https://halal.jawaralegal.biz.id/halal-bandung.html#kontak" class="btn btn-primary">Recommended</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 reveal" data-reveal="">
+          <div class="pkg text-center p-4">
+            <div class="fw-bold" style="color:var(--primary)">Reguler (Skala Menengah &amp; Besar)</div>
+            <div class="muted small mb-3">Proses audit penuh untuk skala produksi lebih besar</div>
+            <ul class="list-unstyled text-start small">
+              <li>• Audit pabrik &amp; SOP</li>
+              <li>• Penyusunan dokumen lengkap</li>
+              <li>• Koordinasi dengan LPH &amp; BPJPH</li>
+            </ul>
+            <div class="mt-3">
+              <a href="https://halal.jawaralegal.biz.id/halal-bandung.html#kontak" class="btn btn-outline-primary">Lihat Detail</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- SECTION: Kontak & Formulir -->
+<section id="kontak" class="section-pad bg-white">
+  <div class="container">
+    <div class="row align-items-start g-5">
+
+      <!-- LEFT COLUMN -->
+      <div class="col-lg-5 reveal" data-reveal="">
+
+        <h3>Siap Mengurus Halal Tanpa Ribet?</h3>
+        <p class="muted">Isi formulir singkat ini. Tim kami akan menghubungi Anda dalam jam kerja.</p>
+
+        <!-- WhatsApp Support -->
+        <div class="mt-4">
+          <div class="d-flex gap-2 align-items-center">
+            <div class="rounded-circle d-flex align-items-center justify-content-center" style="width:54px;height:54px;background:linear-gradient(90deg,var(--primary),var(--accent));color:white;">
+              <i class="bi bi-whatsapp fs-3"></i>
+            </div>
+            <div>
+              <div class="fw-bold">WhatsApp Support</div>
+              <div class="subtle small">+62 812-3456-7890</div>
+            </div>
+          </div>
+
+          <div class="mt-3 small subtle">
+            Jam kerja: Senin–Jumat, 09:00–17:00
+          </div>
+        </div>
+
+        <!-- Pendamping -->
+        <div class="d-flex align-items-center gap-3 mt-4 p-3 rounded-4 shadow-sm" style="background:#faf7fc;">
+          <img src="./Mitra Sertifikasi Halal — Landing Page_files/premium_photo-1663956012095-51a3543cd11c" class="rounded-circle shadow-sm" style="width:70px;height:70px;object-fit:cover;">
+
+          <div>
+            <div class="fw-bold" style="color:var(--primary);">Siti Rahmawati</div>
+            <small class="subtle">Pendamping Proses Halal • BPJPH Registered</small>
+          </div>
+        </div>
+
+      </div> <!-- END LEFT COLUMN -->
+
+      <!-- RIGHT COLUMN: FORM -->
+     <form id="waForm" class="mt-4">
+
+  <div class="mb-3">
+    <label class="form-label">Nama Lengkap</label>
+    <input type="text" class="form-control" id="nama" required="">
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">Nomor WhatsApp</label>
+    <input type="tel" class="form-control" id="wa" required="">
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">Jenis Usaha</label>
+    <input type="text" class="form-control" id="usaha" required="">
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">Kebutuhan Sertifikasi</label>
+    <select class="form-select" id="kebutuhan">
+      <option value="Gratis Pemerintah (SEHATI)">Gratis Pemerintah (SEHATI)</option>
+      <option value="Self Declare UMKM">Self Declare UMKM</option>
+      <option value="Reguler (Skala Menengah / Besar)">Reguler (Skala Menengah / Besar)</option>
+    </select>
+  </div>
+
+  <button type="button" id="kirimWa">Kirim ke WhatsApp</button>
+
+
+</form>
+
+      </div> <!-- END RIGHT COLUMN -->
+
+    </div>
+ 
+</section>
+
+
+
+  <!-- SECTION: Bonus -->
+  <section id="bonus" class="section-pad">
+    <div class="container">
+      <div class="text-center mb-4 reveal" data-reveal="">
+        <h3>Bonus Eksklusif Untuk Pendaftar</h3>
+        <p class="subtle">Dapatkan resource praktis yang akan mempercepat proses sertifikasi Anda.</p>
+      </div>
+
+      <div class="row g-3">
+        <div class="col-md-6 reveal" data-reveal="">
+          <div class="bonus-card">
+            <h5>Template Daftar Bahan Halal (PDF)</h5>
+            <p class="muted small">Format siap pakai untuk verifikasi bahan baku.</p>
+          </div>
+        </div>
+        <div class="col-md-6 reveal" data-reveal="">
+          <div class="bonus-card">
+            <h5>Checklist Produksi Halal untuk UMKM</h5>
+            <p class="muted small">Checklist step-by-step agar audit lulus lebih mudah.</p>
+          </div>
+        </div>
+        <div class="col-md-6 reveal" data-reveal="">
+          <div class="bonus-card">
+            <h5>Panduan Memilih Skema Sertifikasi</h5>
+            <p class="muted small">Panduan singkat memilih jalur tercepat dan termurah.</p>
+          </div>
+        </div>
+        <div class="col-md-6 reveal" data-reveal="">
+          <div class="bonus-card">
+            <h5>Konsultasi 1:1 7 Hari (Chat/WA)</h5>
+            <p class="muted small">Pendampingan intensif untuk pendaftar landing page ini.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-4">
+        <a href="https://halal.jawaralegal.biz.id/halal-bandung.html#kontak" class="btn btn-primary">Ambil Bonus &amp; Daftar Sekarang</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="mt-5">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-md-4">
+          <h5 style="color:white">MitraHalal</h5>
+          <p class="small">Pendampingan sertifikasi halal BPJPH–MUI untuk UMKM &amp; perusahaan. Transparan, cepat, dan ramah UMKM.</p>
+        </div>
+        <div class="col-md-4">
+          <h6 style="color:white">Layanan</h6>
+          <ul class="list-unstyled small">
+            <li><a href="https://halal.jawaralegal.biz.id/halal-bandung.html#layanan">Sertifikasi Halal</a></li>
+            <li><a href="https://halal.jawaralegal.biz.id/halal-bandung.html#layanan">Self Declare</a></li>
+            <li><a href="https://halal.jawaralegal.biz.id/halal-bandung.html#layanan">Pendampingan UMKM</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h6 style="color:white">Kontak</h6>
+          <p class="small">WA: +62 812-3456-7890<br>Email: info@mitrahalal.id</p>
+          <div class="small subtle">Senin–Jumat, 09:00–17:00</div>
+        </div>
+      </div>
+
+      <hr style="border-color:rgba(255,255,255,0.06);margin-top:28px;">
+      <div class="d-flex justify-content-between align-items-center">
+        <small>© 2025 MitraHalal. Semua hak dilindungi.</small>
+        <div>
+          <a class="me-3" href="https://halal.jawaralegal.biz.id/halal-bandung.html#"><i class="bi bi-instagram"></i></a>
+          <a class="me-3" href="https://halal.jawaralegal.biz.id/halal-bandung.html#"><i class="bi bi-facebook"></i></a>
+          <a href="https://halal.jawaralegal.biz.id/halal-bandung.html#"><i class="bi bi-link-45deg"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Bubble -->
+  <a class="wa-bubble" href="https://wa.me/62881012358249?text=Halo%20MitraHalal%20%2C%20saya%20ingin%20konsultasi%20sertifikasi%20halal" target="_blank" rel="noopener">
+    <i class="bi bi-whatsapp"></i>
+    <div style="font-size:.95rem;">Konsultasi WA</div>
+  </a>
+
+  
+  <!-- Bootstrap 5 JS -->
+  <script src="./Mitra Sertifikasi Halal — Landing Page_files/bootstrap.bundle.min.js.download"></script>
+
+  <script>
+    // Simple reveal on scroll
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if(e.isIntersecting) e.target.classList.add('visible');
+      });
+    }, { threshold: 0.12 });
+
+    reveals.forEach(r => observer.observe(r));
+
+    // Form handling (fake submit) + toast
+    const form = document.getElementById('leadForm');
+    const toastEl = document.getElementById('liveToast');
+    const toast = new bootstrap.Toast(toastEl);
+
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      // basic validation
+      const required = ['ownerName','businessName','productType','city','wa','scheme'];
+      let valid = true;
+      required.forEach(id => {
+        const el = document.getElementById(id);
+        if(!el.value || el.value.trim() === '') {
+          el.classList.add('is-invalid');
+          valid = false;
+          setTimeout(()=> el.classList.remove('is-invalid'), 1500);
+        }
+      });
+
+      if(!valid) {
+        // small shake animation
+        form.classList.add('animate__animated','animate__shakeX');
+        setTimeout(()=> form.classList.remove('animate__animated','animate__shakeX'), 600);
+        return;
+      }
+
+      // simulate submit -> show toast
+      toast.show();
+
+      // Optionally: send to webhook / API here.
+      form.reset();
+    });
+
+    // smooth scroll for internal links
+    document.querySelectorAll('a.nav-link, a.btn-outline-secondary, a.btn-outline-primary, a.btn-primary').forEach(a => {
+      if(a.hash && document.querySelector(a.hash)){
+        a.addEventListener('click', (e)=>{
+          if(a.hash.startsWith('#')){
+            e.preventDefault();
+            document.querySelector(a.hash).scrollIntoView({behavior:'smooth', block:'start'});
+          }
+        });
+      }
+    });
+
+
+document.getElementById("waForm").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    const nama = document.getElementById("nama").value;
+    const wa = document.getElementById("wa").value;
+    const usaha = document.getElementById("usaha").value;
+    const kebutuhan = document.getElementById("kebutuhan").value;
+
+    // Nomor WA tujuan (ganti bebas)
+    const tujuan = "6281818433115";
+
+    const pesan = 
+`Halo, saya ingin konsultasi sertifikasi halal:
+
+Nama: ${nama}
+WhatsApp: ${wa}
+Jenis Usaha: ${usaha}
+Kebutuhan: ${kebutuhan}
+
+Mohon bantuannya.`;
+
+    const url = `https://wa.me/${tujuan}?text=` + encodeURIComponent(pesan);
+
+    window.open(url, "_blank");
+});
+</script>
+
+
+
+</body></html>
